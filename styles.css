@@ -478,8 +478,14 @@ img { display: block; max-width: 100%; }
   .caps { grid-template-columns: 1fr; }
   .steps { grid-template-columns: 1fr; }
   .hero__actions { flex-direction: column; }
+  .hero__actions .btn { width: 100%; justify-content: center; }
   .mock__cards { grid-template-columns: 1fr; }
   .nav__cta { display: none; }
+  /* keep faint radar rings for atmosphere, but drop the shield
+     watermark so it never sits under the hero copy (the nav mark
+     already carries the logo) */
+  .radar { opacity: 0.5; }
+  .radar__shield { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
